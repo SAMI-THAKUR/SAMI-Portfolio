@@ -105,14 +105,14 @@
             <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
             <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </button>
-      <button id="lines" onclick="check1()" type="button" class="inline-flex items-center p-3 w-10 h-10 justify-center text-5xl text-gray-500 rounded-lg md:hidden hover:bg-gray-100  dark:text-gray-400 dark:hover:bg-gray-700">
+      <button id="lines" onclick="check1()" type="button" class="inline-flex items-center p-3 w-10 h-10 justify-center text-5xl  rounded-lg md:hidden text-htext dark:text-dhtext dark:hover:bg-gray-700">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14" id="svg">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" id="path"/>
           </svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-extrabold font-robo text-[18px] flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg bg- md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+        <ul class="font-extrabold font-robo text-[18px] flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg bg- md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-background dark:bg-darkbg md:bg-transparent">
             <li class="p-3 active">
                 <a href="#" class="block py-2 pl-3 pr-4 text-htext dark:text-dhtext rounded md:p-0" aria-current="page">Home</a>
             </li>
@@ -166,12 +166,12 @@
             }
             </style>
             <div class="icons text-background dark:text-darkbg  mt-12 flex flex-wrap gap-5 sm:gap-10 justify-start">
-                <i class="fa-brands fa-github text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
-                <i class="fa-brands fa-instagram text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
-                <i class="fa-brands fa-twitter text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
-                <i class="fa-brands fa-linkedin-in text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
+                <a href="https://github.com/SAMI-THAKUR" target="_blank"><i class="fa-brands fa-github text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i></a>
+                <a href="https://www.linkedin.com/in/sami-thakur-6072b8256/" target="_blank"><i class="fa-brands fa-linkedin-in text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i></a>
+                <a href="https://twitter.com/home?lang=en-in" target="_blank"><i class="fa-brands fa-twitter text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i></a>
+                <a href="mailto:2022.sami.thakur@ves.ac.in" target="_blank"><i class="fa-regular fa-envelope text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i></a>  
             </div>
-            <button class="bg-htext dark:bg-dhtext dark:text-darkbg text-background text-msmall md:text-small  p-4 rounded-2xl mt-10 font-robo border-2 border-[#2192FF] dark:border-[#96B6C5]" id="CV">
+            <button class="bg-htext dark:bg-dhtext dark:text-darkbg text-background text-msmall md:text-small  p-4 rounded-2xl mt-10 font-robo border-2 border-[#2192FF] dark:border-[#96B6C5]" id="CV" onclick="window.open('img/RESUME_SAMI_THAKUR.pdf')">
               Download Resume
             </button>
         </div>
@@ -264,7 +264,7 @@
             <div id="des" class="mt-4">
                 <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">PORTFOLIO</div>
                 <div class="flex mt-4 gap-5">
-                    <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+                    <a href="https://github.com/SAMI-THAKUR/SAMI-Portfolio" target="_blank">  <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i></a> 
                 </div>
                 <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
                     TECH STACK
@@ -285,7 +285,7 @@
             <div id="des" class="mt-4">
                 <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Old Portfolio</div>
                 <div class="flex mt-4 gap-5">
-                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+                    <a href="https://github.com/SAMI-THAKUR/PORTFOLIO" target="_blank"><i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i></a>
                 </div>
                 <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
                     TECH STACK
@@ -303,7 +303,7 @@
             <div id="des" class="mt-4">
                 <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Thread Clone</div>
                 <div class="flex mt-4 gap-5">
-                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+                    <a href="https://github.com/SAMI-THAKUR/Thread-Clone" target="_blank"><i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i></a>   
                 </div>
                 <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
                     TECH STACK
@@ -323,7 +323,7 @@
         <div id="des" class="mt-4">
             <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext  rounded-2xl">Calculator</div>
             <div class="flex mt-4 gap-5">
-                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+                <a href="https://github.com/SAMI-THAKUR/CALCULATOR" target="_blank"><i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i></a>   
             </div>
             <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
                 TECH STACK
@@ -343,7 +343,7 @@
         <div id="des" class="mt-4">
             <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Weather Site</div>
             <div class="flex mt-4 gap-5">
-                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+                <a href="https://github.com/SAMI-THAKUR/weather-site" target="_blank"><i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i></a>
             </div>
             <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
                 TECH STACK
@@ -438,10 +438,11 @@
         I truly appreciate your time and interest in my work. <br>
     </center>
     <div class=" text-background dark:text-darkbg  mt-12 flex flex-wrap gap-10 justify-center">
-        <i class="fa-brands fa-github text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
-        <i class="fa-brands fa-instagram text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
-        <i class="fa-brands fa-twitter text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
-        <i class="fa-brands fa-linkedin-in text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
+        <a href="https://github.com/SAMI-THAKUR" target="_blank"> <i class="fa-brands fa-github text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i></a>
+        <a href="https://www.linkedin.com/in/sami-thakur-6072b8256/" target="_blank"> <i class="fa-brands fa-linkedin-in text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i></a>
+        <a href="https://twitter.com/home?lang=en-in" target="_blank"> <i class="fa-brands fa-twitter text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i></a> 
+        <a href="mailto:2022.sami.thakur@ves.ac.in" target="_blank"><i class="fa-regular fa-envelope text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i></a>
+        <a href="https://www.instagram.com/sami_thakur_/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i></a>
     </div>
     <div class="text-red-500 mt-12 flex flex-wrap gap-10 justify-center text-[17px] sm:text-[30px] font-name">
         Desing & Developed by &lt;/SAMI&gt;
