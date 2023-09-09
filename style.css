@@ -1657,6 +1657,10 @@ video {
     width: 500px;
   }
 
+  .sm\:justify-normal {
+    justify-content: normal;
+  }
+
   .sm\:gap-10 {
     gap: 2.5rem;
   }
