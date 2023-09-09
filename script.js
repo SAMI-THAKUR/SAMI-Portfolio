@@ -113,7 +113,7 @@ window.onscroll = function(){
         li[0].classList.add('active');
     }else{
     for(let i=0; i<section.length ; i++){
-        if(scrollY >= section[i].offsetTop-250 &&  scrollY < section[i].offsetTop + section[i].offsetHeight-300){
+        if(scrollY >= section[i].offsetTop-150 &&  scrollY < section[i].offsetTop + section[i].offsetHeight-300){
             li[i].classList.add('active');
             break;
         }else{
