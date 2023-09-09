@@ -2,8 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SAMI</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img\avatar.ico">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -143,8 +144,32 @@
             <div class="font-robo text-small mt-2 text-[#6890b5]">
                 // THIS IS MY PORTFOLIO...{Version 2.0}
             </div>
-            <div class="flex flex-wrap">
-
+            <style>
+                .icons i{
+                    transition:0.2s;
+                }
+              .icons i:hover{
+                /*float effect*/
+                transform:translateY(-10px);
+                transition:0.5s;
+                /*color effect*/
+                box-shadow:0 0px 5px 3px#2192FF;    
+                border-color: #2192FF;; 
+            }
+            .dark .icons i:hover{
+                /*float effect*/
+                transform:translateY(-10px);
+                transition:0.5s;
+                /*color effect*/
+                box-shadow:0 0px 5px 3px#96B6C5;    
+                border-color: #96B6C5;; 
+            }
+            </style>
+            <div class="icons text-background dark:text-darkbg  mt-12 flex flex-wrap gap-5 sm:gap-10 justify-start">
+                <i class="fa-brands fa-github text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
+                <i class="fa-brands fa-instagram text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
+                <i class="fa-brands fa-twitter text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
+                <i class="fa-brands fa-linkedin-in text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i>
             </div>
             <button class="bg-htext dark:bg-dhtext dark:text-darkbg text-background text-msmall md:text-small  p-4 rounded-2xl mt-10 font-robo border-2 border-[#2192FF] dark:border-[#96B6C5]" id="CV">
               Download Resume
@@ -168,17 +193,15 @@
         <div class="w-fit">
             <img src="img\SAMI(PHOTO)-modified.png" alt="" class="w-[250px] lg:w-[290px] h-[250px] lg:h-[290px]">
         </div>
-        <div class="w-[400px] sm:w-[500px] lg:w-[550px] text-small lg:text-para font-roboto font-semibold  text-text dark:text-dtext border-2 p-4 rounded-3xl border-htext dark:border-dhtext">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Reiciendis vitae amet facere enim sunt explicabo distinctio 
-            nam obcaecati voluptate ea. Sapiente rerum totam voluptatibus 
-            eius optio, nulla nihil. Obcaecati veniam totam autem accusamus 
-            optio repellendus delectus, reiciendis magni maxime minus!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Placeat voluptas explicabo laborum illum esse. Quibusdam reiciendis 
-            dignissimos mollitia asperiores laborum. Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Dolorum, similique.
-        </div>
+        <div class="w-[400px] sm:w-[500px] lg:w-[550px] text-small lg:text-para font-roboto font-semibold  text-text dark:text-dtext border-2 p-4 rounded-3xl border-htext dark:border-dhtext ">
+            Hello, my name is Sami <br>
+            I am an a second-year engineering student at VESIT (Mumbai), 
+            majoring in Artificial Intelligence and Data Science.
+            I've been coding for about a year started with JAVA and HTML 
+            and made some static html sites. Fast forward to today I have 
+            strong hand on core JAVA. Currntly my main focus is learning
+            FULL STACK WEB DEVELOPMENT and DSA in JAVA and in future I aspire 
+            to learn about MACHINE LEARNING & DATA SCIENCE
     </div>
   </section>
 
@@ -234,26 +257,65 @@
       { Not much to show here...but I am working on it. }
     </div>
     <div class="flex flex-wrap mt-10 gap-10 mr-10">
-      <div id="container" class="p-4 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
-        <div class="">
-            <img src="img\thread-img.png" alt="" class="w-[350px] h-[250px]">
+        <div id="container" class="p-4 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
+            <div class="">
+                <img src="img\portfolio.png" alt="" class="w-[350px] h-[250px]">
+            </div>
+            <div id="des" class="mt-4">
+                <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">PORTFOLIO</div>
+                <div class="flex mt-4 gap-5">
+                    <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+                </div>
+                <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
+                    TECH STACK
+                </div>
+                <div class="flex flex-wrap mt-4 gap-2">
+                    <img src="img\icons8-html-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-css-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-js-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-tailwind-css-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-firebase-96.png" alt=""  class="w-10 h-10">
+                </div>
+            </div>
         </div>
-        <div id="des" class="mt-4">
-            <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Thread Clone</div>
-            <div class="flex mt-4 gap-5">
+        <div id="container" class="p-4 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
+            <div class="border-2 border-htext">
+                <img src="img\old.png" alt="" class="w-[350px] h-[250px]">
+            </div>
+            <div id="des" class="mt-4">
+                <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Old Portfolio</div>
+                <div class="flex mt-4 gap-5">
                 <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
-            </div>
-            <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
-                TECH STACK
-            </div>
-            <div class="flex flex-wrap mt-4 gap-2">
-                <img src="img\icons8-html-96.png" alt=""  class="w-10 h-10">
-                <img src="img\icons8-css-96.png" alt=""  class="w-10 h-10">
-                <img src="img\icons8-js-96.png" alt=""  class="w-10 h-10">
-                <img src="img\icons8-tailwind-css-96.png" alt=""  class="w-10 h-10">
+                </div>
+                <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
+                    TECH STACK
+                </div>
+                <div class="flex flex-wrap mt-4 gap-2">
+                    <img src="img\icons8-html-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-css-96.png" alt=""  class="w-10 h-10">
+                </div>
             </div>
         </div>
-      </div>
+        <div id="container" class="p-4 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
+            <div class="">
+                <img src="img\thread-img.png" alt="" class="w-[350px] h-[250px]">
+            </div>
+            <div id="des" class="mt-4">
+                <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Thread Clone</div>
+                <div class="flex mt-4 gap-5">
+                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+                </div>
+                <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
+                    TECH STACK
+                </div>
+                <div class="flex flex-wrap mt-4 gap-2">
+                    <img src="img\icons8-html-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-css-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-js-96.png" alt=""  class="w-10 h-10">
+                    <img src="img\icons8-tailwind-css-96.png" alt=""  class="w-10 h-10">
+                </div>
+            </div>
+        </div>
       <div id="container" class="p-5 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
         <div class="">
             <img src="img\calci.png" alt="" class="w-[230px] h-[250px]">

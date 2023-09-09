@@ -13,7 +13,7 @@ const firebaseConfig = {
   // initialize firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore()
-  const colref = db.collection('form');
+  const colref = db.collection('production');
 
     const D= new Date();
     const date = D.getDate() + "/" + (D.getMonth()+1) + "/" + D.getFullYear();
