@@ -1,8 +1,8 @@
 ## SAMI-THAKUR
 
 # My Personal Portfolio 🚀
-<p align="center">
-  <img src="https://github.com/SAMI-THAKUR/SAMI-Portfolio/assets/118300788/0e52f16d-9f1c-42a7-8141-3d20855e9be3" alt="Portfolio Cover" width="100px" height="100px" align="left">
+<p align="left">
+  <img src="https://github.com/SAMI-THAKUR/SAMI-Portfolio/assets/118300788/a7b7dc61-ceb9-4e97-b94e-1150a91bc109" alt="Portfolio Cover" width="80px" height="80px" align="left">
 </p>
 Welcome to my personal portfolio website! This project showcases my journey, skills, and projects as a web developer. I've designed and developed this portfolio using HTML, CSS, JavaScript, Tailwind CSS, and Firebase as the database.
 
