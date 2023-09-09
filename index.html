@@ -1,0 +1,396 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/1c61aef8ab.js" crossorigin="anonymous"></script>
+                   
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    .active{
+        border-bottom: solid;
+        border-bottom-width: 4px;
+        border-color: #010A43;
+        padding: 15px;
+    }
+    .dark .active{
+        border-bottom: solid;
+        border-color: #00bcd4;
+    }
+    .show{
+        display: block;
+        transition: 2ms;
+    }
+
+    nav li{
+        transition: 0.1s;
+        border-radius: 10px;
+    }
+    nav li:hover{
+        border-bottom: solid;
+        border-bottom-width: 4px;
+        border-color: #010A43;
+    }
+    .dark nav li:hover{
+        border-bottom: solid;
+        border-color: #00bcd4;
+    }
+
+    #theme-toggle:hover{
+        border: none;
+        border-bottom: solid;
+        border-bottom-width: 3px;
+        border-color: #010A43;
+    }
+    .dark #theme-toggle:hover{
+        border: none;
+        border-bottom: solid;
+        border-color: #00bcd4;
+    }
+    #CV{
+        box-shadow: 3px 3px #2192FF;
+    }
+    .dark #CV{
+        box-shadow: 3px 3px #96B6C5;
+    }
+    #CV:hover{
+        box-shadow: 3px 3px #010A43;
+    }
+    .dark #CV:hover{
+        box-shadow: 3px 3px #00bcd4;
+    }
+    .visible{
+        opacity: 1;
+        -webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-transition: all 0.6s ease-in-out;
+	    -moz-transition: all 0.6s ease-in-out;
+		-ms-transition: all 0.6s ease-in-out;
+		-o-transition: all 0.6s ease-in-out;
+		transition: all 0.6s ease-in-out;
+    }
+    .hide{
+        opacity: 0;
+        -webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+    }
+
+</style>
+<body class="bg-background dark:bg-darkbg">
+   <!--------------------------------------------NAV_BAR----------------------------------------------------->   
+
+   <nav class="fixed w-full top-1 gap-y-2 bg-secondary border-solid border-2 border-htext dark:border-dhtext dark:bg-dsecondary duration-500 z-50 rounded-2xl" id="nav">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6" id="container">
+<!----------------------------------------------TOGGLE------------------------------------------------------->
+       
+        <button id="theme-toggle" type="button" class="ml-5 text-htext dark:text-dhtext hover:bg-background  dark:hover:bg-darkbg rounded-full text-sm p-3 md:p-5 hover:shadow-htext border-htext dark:border-dhtext border-2 duration-100">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        </button>
+      <button id="lines" onclick="check1()" type="button" class="inline-flex items-center p-3 w-10 h-10 justify-center text-5xl text-gray-500 rounded-lg md:hidden hover:bg-gray-100  dark:text-gray-400 dark:hover:bg-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14" id="svg">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" id="path"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-extrabold font-robo text-[18px] flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg bg- md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+            <li class="p-3 active">
+                <a href="#" class="block py-2 pl-3 pr-4 text-htext dark:text-dhtext rounded md:p-0" aria-current="page">Home</a>
+            </li>
+            <li class="p-3">
+                <a href="#About" class="block py-2 pl-3 pr-4 text-htext dark:text-dhtext rounded md:border-0 md:p-0 ">About</a>
+            </li>
+            <li class="p-3"> 
+                <a href="#SKILLS" class="block py-2 pl-3 pr-4 text-htext dark:text-dhtext  rounded  md:border-0  md:p-0">Skills</a>
+             </li>
+            <li class="p-3">
+                <a href="#Project" class="block py-2 pl-3 pr-4 text-htext dark:text-dhtext  rounded md:border-0  md:p-0 ">Pojects</a>
+            </li>
+            <li class="p-3">
+                <a href="#Contact" class="block py-2 pl-3 pr-4 text-htext dark:text-dhtext  rounded  md:border-0  md:p-0 ">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="Home" class="mt-40 md:mt-52 flex flex-wrap  mr-10 ml-10 sm:ml-20 md:ml-36 lg:ml-44">
+        <div id="text" class="w-fit text-htext dark:text-dhtext">
+            <div class="text-small font-robo mb-2">
+                My name is
+            </div>
+            <div class="text-mheading md:text-heading font-robo font-semibold" id="name">
+                &lt;SAMI&gt;
+            </div>
+            <div class="font-robo text-small mt-2 text-[#6890b5]">
+                // THIS IS MY PORTFOLIO...{Version 2.0}
+            </div>
+            <div class="flex flex-wrap">
+
+            </div>
+            <button class="bg-htext dark:bg-dhtext dark:text-darkbg text-background text-msmall md:text-small  p-4 rounded-2xl mt-10 font-robo border-2 border-[#2192FF] dark:border-[#96B6C5]" id="CV">
+              Download Resume
+            </button>
+        </div>
+        <div class="md:ml-20 lg:ml-40 md:-mt-3 flex justify-center">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+            <lottie-player src="https://lottie.host/b91d81ad-a956-4819-8cd8-62d79f8e3791/vL7V8HTNfO.json" background="transparent" speed="1"loop autoplay class="w-[330px] tablet:w-[350px] lg:w-[400px] h-[330px] tablet:h-[350px] lg:h-[400px]"></lottie-player>
+        </div>
+  </section>
+
+  <!-----------------ABOUT------------------------->
+  <section id="About" class="mt-24 ml-5 sm:ml-20 lg:ml-44">
+    <div class="font-play font-semibold text-htext dark:text-dhtext text-heading">
+        # ABOUT
+    </div>
+    <div class="mt-5 font-hand text-htext dark:text-dhtext text-xl lg:text-3xl flex flex-wrap">
+        { A brief introduction about me... }
+    </div>
+    <div class="flex flex-wrap mr-5 sm:mr-0 mt-8 md:mt-12 justify-start gap-m sm:gap-s lg:gap-l">
+        <div class="w-fit">
+            <img src="img\SAMI(PHOTO)-modified.png" alt="" class="w-[250px] lg:w-[290px] h-[250px] lg:h-[290px]">
+        </div>
+        <div class="w-[400px] sm:w-[500px] lg:w-[550px] text-small lg:text-para font-roboto font-semibold  text-text dark:text-dtext border-2 p-4 rounded-3xl border-htext dark:border-dhtext">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Reiciendis vitae amet facere enim sunt explicabo distinctio 
+            nam obcaecati voluptate ea. Sapiente rerum totam voluptatibus 
+            eius optio, nulla nihil. Obcaecati veniam totam autem accusamus 
+            optio repellendus delectus, reiciendis magni maxime minus!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Placeat voluptas explicabo laborum illum esse. Quibusdam reiciendis 
+            dignissimos mollitia asperiores laborum. Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Dolorum, similique.
+        </div>
+    </div>
+  </section>
+
+  <!----------------SKILLS---------------------->
+  <section id="SKILLS" class="mt-24 ml-10 sm:ml-20 lg:ml-32">
+    <div class="font-play font-semibold text-htext dark:text-dhtext text-heading">
+        # SKILLS
+        <br>
+    </div>
+    <div class="font-hand font-medium text-htext dark:text-dhtext text-3xl">
+        <br>
+        { My Tech Stack always tryin to learn new things... }
+    </div>
+    <div class="flex justify-center">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+        <lottie-player src="https://lottie.host/3c59e120-1bf7-447d-af12-76677b3033a7/IIXwanQWWI.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay class="mr-10"></lottie-player>
+    </div>
+    <div class="flex flex-wrap justify-center mr-10 lg:mr-20">
+           
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\HTML logo.png" alt=""  class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\CSS.png" alt=""class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\javascript.png" alt=""class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\tailwind_css.png" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\bootstrap.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\JAVA logo.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\c.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\firebase.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>
+            
+    </div>
+  </section>
+
+  <section id="Project" class="mt-24 ml-10 sm:ml-20 lg:ml-32">
+    <div class="font-play font-semibold text-htext dark:text-dhtext text-[55px] sm:text-heading">
+        # PROJECT
+    </div>
+    <div class="mt-5 font-hand text-htext dark:text-dhtext text-xl lg:text-3xl flex flex-wrap mr-5">
+      { Not much to show here...but I am working on it. }
+    </div>
+    <div class="flex flex-wrap mt-10 gap-10 mr-10">
+      <div id="container" class="p-4 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
+        <div class="">
+            <img src="img\thread-img.png" alt="" class="w-[350px] h-[250px]">
+        </div>
+        <div id="des" class="mt-4">
+            <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Thread Clone</div>
+            <div class="flex mt-4 gap-5">
+                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+            </div>
+            <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
+                TECH STACK
+            </div>
+            <div class="flex flex-wrap mt-4 gap-2">
+                <img src="img\icons8-html-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-css-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-js-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-tailwind-css-96.png" alt=""  class="w-10 h-10">
+            </div>
+        </div>
+      </div>
+      <div id="container" class="p-5 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
+        <div class="">
+            <img src="img\calci.png" alt="" class="w-[230px] h-[250px]">
+        </div>
+        <div id="des" class="mt-4">
+            <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext  rounded-2xl">Calculator</div>
+            <div class="flex mt-4 gap-5">
+                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+            </div>
+            <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
+                TECH STACK
+            </div>
+            <div class="flex flex-wrap mt-4 gap-2">
+                <img src="img\icons8-html-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-css-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-js-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-tailwind-css-96.png" alt=""  class="w-10 h-10">
+            </div>
+        </div>
+      </div>
+      <div id="container" class="p-5 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
+        <div class="">
+            <img src="img\weather.png" alt="" class="w-[350px] h-[250px]">
+        </div>
+        <div id="des" class="mt-4">
+            <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Weather Site</div>
+            <div class="flex mt-4 gap-5">
+                <i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i>
+            </div>
+            <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
+                TECH STACK
+            </div>
+            <div class="flex flex-wrap mt-4 gap-2">
+                <img src="img\icons8-html-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-css-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-js-96.png" alt=""  class="w-10 h-10">
+                <img src="img\icons8-tailwind-css-96.png" alt=""  class="w-10 h-10">
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section id="Contact" class="mt-24 ml-5 sm:ml-20 lg:ml-32">
+    <div class="font-play font-semibold text-htext dark:text-dhtext text-[55px] sm:text-heading">
+        # Contact
+    </div>
+    <div class="text-[40px] font-hand mt-2 text-htext dark:text-dhtext">{ Get in Touch.. }</div>
+    <div class="grid justify-center">
+        <center>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+            <lottie-player src="https://lottie.host/d8acb7e6-f392-4bcb-aab7-7745f29eb780/EZENHZ9eZ7.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </center>
+        <center class="mt-7" id="contact-form">
+            <style>
+                form{
+                    box-shadow: 9px 9px #2192FF;
+                }
+                .dark form{
+                    box-shadow: 9px 9px #96B6C5;
+                }
+                form input , form textarea{
+                    box-shadow: 5px 5px #2192FF;
+                    padding: 10px;
+                }
+                .dark form input , .dark form textarea{
+                    box-shadow: 5px 5px #96B6C5;
+                    padding: 10px;
+                }
+                #submit{
+                    box-shadow: 3px 3px #2192FF;
+                }
+                .dark #submit{
+                    box-shadow: 3px 3px #96B6C5;
+                }
+                #submit:hover{
+                     box-shadow: 3px 3px #010A43;
+                }
+                .dark #submithover{
+                     box-shadow: 3px 3px #00bcd4;
+                }
+            </style>
+            <form id="form" class="flex flex-col flex-wrap text-left w-fit bg-secondary dark:bg-dsecondary p-5 rounded-xl border-2 border-[#2192ff] dark:border-[#96B6C5] mr-5 font-robo" action="#">
+                <label for="name" class="font-robo mb-2 text-2xl text-htext dark:text-dhtext">Name:</label>
+                <input type="text" name="name" required="" class="mb-5 rounded-lg h-10" id="f-name">
+                <label for="email" class="font-robo mb-2 text-2xl text-htext dark:text-dhtext">Email:</label>
+                <input type="email" name="email" required="" class="mb-5 rounded-lg h-10" id="f-email">
+                <label for="message" class="font-robo mb-2 text-2xl text-htext dark:text-dhtext ">Message:</label>
+                <textarea  name="message" required="" class="w-[290px] sm:w-[400px] lg:w-[500px] h-[100px] mb-5 rounded-lg" id="f-message"></textarea>
+                <button class="bg-background dark:bg-darkbg dark:text-darkbg text-htext dark:text-dhtext text-msmall md:text-small  p-4 rounded-2xl mt-10 font-robo border-2 border-[#2192ff] dark:border-[#0d1117]" id="submit" onclick="">
+                   Submit
+                </button>
+                <div id="thank-note" class="hidden text-small font-robo mt-10 text-htext dark:text-dhtext bg-background dark:bg-darkbg p-3 border-2 rounded-2xl border-htext dark:border-dhtext">
+                    Thank you for contacting me. <br>
+                     I will get back to you soon.
+                </div>
+            </form>
+        </center>
+    </div>
+  </section>
+    <style>
+        #credits{
+            
+            background-color: #010A43;
+            box-shadow: 0 0 0 100vmax #010A43;
+            clip-path: inset(0 -100vmax);
+        }
+        .dark #credits{
+            background-color: #00ffff;
+            box-shadow: 0 0 0 100vmax #00ffff;
+        }
+    </style>
+
+  <div id="credits" class=" mt-10 py-5 px-3">
+    <center class="text-[13px] sm:text-small text-background dark:text-darkbg font-robo ">
+        Thank you for visiting my portfolio site. <br>
+        I truly appreciate your time and interest in my work. <br>
+    </center>
+    <div class=" text-background dark:text-darkbg  mt-12 flex flex-wrap gap-10 justify-center">
+        <i class="fa-brands fa-github text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
+        <i class="fa-brands fa-instagram text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
+        <i class="fa-brands fa-twitter text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
+        <i class="fa-brands fa-linkedin-in text-background dark:text-darkbg text-[25px] sm:text-[35px] font-light"></i>
+    </div>
+    <div class="text-red-500 mt-12 flex flex-wrap gap-10 justify-center text-[17px] sm:text-[30px] font-name">
+        Desing & Developed by &lt;/SAMI&gt;
+    </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
