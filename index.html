@@ -61,14 +61,20 @@
     }
     #CV{
         box-shadow: 3px 3px #2192FF;
+        transition: linear 0.1s;
     }
     .dark #CV{
-        box-shadow: 3px 3px #96B6C5;
+        box-shadow: 3px 3px #333333;
+        transition: linear 0.1s;
     }
     #CV:hover{
+        background:#2192FF;
+        color: #010A43;
         box-shadow: 3px 3px #010A43;
     }
     .dark #CV:hover{
+        background:#333333;
+        color: #00bcd4;
         box-shadow: 3px 3px #00bcd4;
     }
     .visible{
@@ -171,7 +177,7 @@
                 <a href="https://twitter.com/SamiThakur28" target="_blank"><i class="fa-brands fa-twitter text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i></a>
                 <a href="mailto:2022.sami.thakur@ves.ac.in" target="_blank"><i class="fa-regular fa-envelope text-htext dark:text-dhtext text-[25px] sm:text-[35px] font-light p-3 border-2 border-htext dark:border-dhtext rounded-full"></i></a>  
             </div>
-            <button class="bg-htext dark:bg-dhtext dark:text-darkbg text-background text-msmall md:text-small  p-4 rounded-2xl mt-10 font-robo border-2 border-[#2192FF] dark:border-[#96B6C5]" id="CV" onclick="window.open('img/RESUME_SAMI_THAKUR.pdf')">
+            <button class="bg-htext dark:bg-dhtext dark:text-darkbg text-background text-msmall md:text-small  p-4 rounded-2xl mt-10 font-robo border-2 border-[#2192FF] dark:border-[#333333] " id="CV" onclick="window.open('img/RESUME_SAMI_THAKUR.pdf')">
               Download Resume
             </button>
         </div>
@@ -182,7 +188,7 @@
   </section>
 
   <!-----------------ABOUT------------------------->
-  <section id="About" class="mt-24 ml-5 sm:ml-20 lg:ml-44">
+  <section id="About" class="mt-12 ml-5 sm:ml-20 lg:ml-44">
     <div class="font-play font-semibold text-htext dark:text-dhtext text-heading">
         # ABOUT
     </div>
@@ -191,7 +197,7 @@
     </div>
     <div class="flex flex-wrap mr-5 sm:mr-0 mt-8 md:mt-12 justify-start gap-m sm:gap-s lg:gap-l">
         <div class="w-fit">
-            <img src="img\SAMI(PHOTO)-modified.png" alt="" class="w-[250px] lg:w-[290px] h-[250px] lg:h-[290px]">
+            <img src="img\profile-pic-bw-modified.png" alt="" class="w-[290px] lg:w-[400px] h-[290px] lg:h-[400px]">
         </div>
         <div class="w-[400px] sm:w-[500px] lg:w-[550px] text-small lg:text-para font-roboto font-semibold  text-text dark:text-dtext border-2 p-4 rounded-3xl border-htext dark:border-dhtext ">
             Hello, my name is Sami <br>
@@ -206,7 +212,7 @@
   </section>
 
   <!----------------SKILLS---------------------->
-  <section id="SKILLS" class="mt-24 ml-10 sm:ml-20 lg:ml-32">
+  <section id="SKILLS" class="mt-12 ml-10 sm:ml-20 lg:ml-32">
     <div class="font-play font-semibold text-htext dark:text-dhtext text-heading">
         # SKILLS
         <br>
@@ -219,8 +225,11 @@
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
         <lottie-player src="https://lottie.host/3c59e120-1bf7-447d-af12-76677b3033a7/IIXwanQWWI.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay class="mr-10"></lottie-player>
     </div>
-    <div class="flex flex-wrap justify-center mr-10 lg:mr-20">
-           
+    <div class="font-hand font-medium text-htext dark:text-dhtext text-5xl">
+        <br>
+        Languages I know...
+    </div>
+    <div class="flex flex-wrap justify-center mr-10 lg:mr-20 mt-10">
             <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
                 <img src="img\HTML logo.png" alt=""  class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
             </div>
@@ -241,11 +250,22 @@
             </div>
             <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
                 <img src="img\c.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
-            </div>
+            </div> 
+    </div>
+    <div class="font-hand font-medium text-htext dark:text-dhtext text-5xl">
+        <br>
+        Tools I use...
+    </div>
+    <div class="flex flex-wrap justify-center mr-10 lg:mr-20 mt-10">
             <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
                 <img src="img\firebase.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
-            </div>
-            
+            </div>   
+             <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\git.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div> 
+            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+                <img src="img\github.png" alt="" class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
+            </div>  
     </div>
   </section>
 
@@ -296,6 +316,23 @@
                 </div>
             </div>
         </div>
+           <div id="container" class="p-5 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
+        <div class="flex justify-center">
+            <img src="img\Screenshot_1695571086.png" alt="" class="w-[220px] h-[250px]">
+        </div>
+        <div id="des" class="mt-4">
+            <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Spotify-app-UI</div>
+            <div class="flex mt-4 gap-5">
+                <a href="https://github.com/SAMI-THAKUR/weather-site" target="_blank"><i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i></a>
+            </div>
+            <div class="mt-4 text-xl font-robo text-htext dark:text-dhtext ">
+                TECH STACK
+            </div>
+            <div class="flex flex-wrap mt-4 gap-2">
+                <img src="img\icons8-flutter-96.png" alt=""  class="w-10 h-10">
+            </div>
+        </div>
+      </div>
         <div id="container" class="p-4 rounded-3xl border-2 bg-secondary dark:bg-dsecondary">
             <div class="">
                 <img src="img\thread-img.png" alt="" class="w-[350px] h-[250px]">
@@ -356,13 +393,11 @@
             </div>
         </div>
       </div>
-
-
     </div>
   </section>
 
 
-  <section id="Contact" class="mt-24 ml-5 sm:ml-20 lg:ml-32">
+  <section id="Contact" class="mt-16 ml-5 sm:ml-20 lg:ml-32">
     <div class="font-play font-semibold text-htext dark:text-dhtext text-[55px] sm:text-heading justify-center sm:justify-normal flex">
         # Contact
     </div>
