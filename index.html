@@ -61,16 +61,17 @@
     }
     #CV{
         box-shadow: 3px 3px #2192FF;
-        transition: linear 0.1s;
+        transition: ease-out 0.1s;
     }
     .dark #CV{
         box-shadow: 3px 3px #333333;
-        transition: linear 0.1s;
+        transition: ease-in 250ms;
     }
     #CV:hover{
         background:#2192FF;
         color: #010A43;
         box-shadow: 3px 3px #010A43;
+        transition: ease-in 250ms;
     }
     .dark #CV:hover{
         background:#333333;
@@ -138,6 +139,7 @@
       </div>
     </div>
   </nav>
+
 
   <section id="Home" class="mt-40 md:mt-52 flex flex-wrap  mr-10 ml-10 sm:ml-20 md:ml-36 lg:ml-44">
         <div id="text" class="w-fit text-htext dark:text-dhtext">
@@ -226,7 +228,7 @@
         Languages I know...
     </div>
     <div class="flex flex-wrap justify-center mr-10 lg:mr-20 mt-10">
-            <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
+            <div class="grid  justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext ">
                 <img src="img\HTML logo.png" alt=""  class="w-[110px] lg:w-[180px] h-[110px] lg:h-[180px]">
             </div>
             <div class="flex justify-center m-3 lg:m-5 border-2 rounded-full p-2 border-htext dark:border-dhtext">
@@ -317,7 +319,7 @@
             <img src="img\Screenshot_1695571086.png" alt="" class="w-[220px] h-[250px]">
         </div>
         <div id="des" class="mt-4">
-            <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl">Spotify-app-UI</div>
+            <div class="font-robo font-semibold text-para p-3 bg-background dark:bg-darkbg text-htext dark:text-dhtext rounded-2xl border-2">Spotify-app-UI</div>
             <div class="flex mt-4 gap-5">
                 <a href="https://github.com/SAMI-THAKUR/spotify-app-clone" target="_blank"><i class="fa-brands fa-github text-htext dark:text-dhtext text-icon"></i></a>
             </div>
