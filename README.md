@@ -6,7 +6,7 @@
 </p>
 Welcome to my personal portfolio website! This project showcases my journey, skills, and projects as a web developer. I've designed and developed this portfolio using HTML, CSS, JavaScript, Tailwind CSS, and Firebase as the database.
 
-Explore my portfolio [here](https://your-portfolio-url.com).
+Explore my portfolio [here](https://sami-portfolio-omega.vercel.app/).
 
 ## 🛠️ Tech Stack
 
