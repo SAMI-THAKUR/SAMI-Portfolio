@@ -608,8 +608,20 @@ video {
   left: 0.25rem;
 }
 
+.left-52 {
+  left: 13rem;
+}
+
+.left-9 {
+  left: 2.25rem;
+}
+
 .right-1 {
   right: 0.25rem;
+}
+
+.right-10 {
+  right: 2.5rem;
 }
 
 .top-0 {
@@ -618,18 +630,6 @@ video {
 
 .top-1 {
   top: 0.25rem;
-}
-
-.left-9 {
-  left: 2.25rem;
-}
-
-.left-52 {
-  left: 13rem;
-}
-
-.right-10 {
-  right: 2.5rem;
 }
 
 .z-50 {
@@ -1000,8 +1000,8 @@ video {
   width: 110px;
 }
 
-.w-\[220px\] {
-  width: 220px;
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-\[290px\] {
@@ -1148,6 +1148,10 @@ video {
   gap: 1.25rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-l {
   gap: 200px;
 }
@@ -1289,11 +1293,6 @@ video {
   --tw-border-opacity: 0;
 }
 
-.bg-\[\#36afff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(54 175 255 / var(--tw-bg-opacity));
-}
-
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(117 194 246 / var(--tw-bg-opacity));
@@ -1316,16 +1315,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#98c8e8\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(152 200 232 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#6ac4ff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(106 196 255 / var(--tw-bg-opacity));
 }
 
 .p-0 {
@@ -1373,6 +1362,21 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .pl-3 {
@@ -1719,8 +1723,8 @@ video {
     justify-content: normal;
   }
 
-  .sm\:gap-10 {
-    gap: 2.5rem;
+  .sm\:gap-7 {
+    gap: 1.75rem;
   }
 
   .sm\:gap-s {
@@ -1841,6 +1845,14 @@ video {
     margin-right: 5rem;
   }
 
+  .lg\:h-\[140px\] {
+    height: 140px;
+  }
+
+  .lg\:h-\[150px\] {
+    height: 150px;
+  }
+
   .lg\:h-\[180px\] {
     height: 180px;
   }
@@ -1849,16 +1861,12 @@ video {
     height: 400px;
   }
 
-  .lg\:h-\[80px\] {
-    height: 80px;
+  .lg\:w-\[140px\] {
+    width: 140px;
   }
 
-  .lg\:h-\[30px\] {
-    height: 30px;
-  }
-
-  .lg\:h-\[50px\] {
-    height: 50px;
+  .lg\:w-\[150px\] {
+    width: 150px;
   }
 
   .lg\:w-\[180px\] {
